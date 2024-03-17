@@ -15,6 +15,7 @@ import Width from './Topics/utility_classes/Width';
 import Opacity from './Topics/utility_classes/Opacity';
 import Flexbox from './Topics/utility_classes/Flexbox';
 import Grid from './Topics/utility_classes/Grid';
+import BackgroundColor from './Topics/utility_classes/BackgroundColor';
 
 
 function App() {
@@ -74,6 +75,7 @@ function App() {
     })
     // console.log('Copy: ', copyAppIndex)
     setTopicList(copyTopicsArr)
+    scrollToTop();
 
     // close mobile menu
     setMobileMenu(false)
@@ -96,6 +98,7 @@ function App() {
         { activeTopicName === 'Opacity' && <Opacity /> }
         { activeTopicName === 'Flexbox' && <Flexbox /> }
         { activeTopicName === 'Grid' && <Grid /> }
+        { activeTopicName === 'Background color' && <BackgroundColor /> }
       </div>
     </div>
   )

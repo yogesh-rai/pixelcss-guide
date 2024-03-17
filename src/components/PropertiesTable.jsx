@@ -12,8 +12,15 @@ const PropertiesTable = ({ data }) => {
                 <tbody className="">
                     {data.map((item, index) => (
                         <tr key={index} className={(index % 2 !== 0 ? 'bg-green-light-7' : '')}>
-                            <td className="p-1 fw-bold text-gray-dark-2">{item.classNames}</td>
-                            <td className="p-1 pl-2 fw-bold text-gray-dark-2">{item.description}</td>
+                            <td className="p-1 fw-bold text-gray-dark-2 lh-3">{item.classNames}</td>
+                            <td className="p-1 pl-2 fw-bold text-gray-dark-2 lh-3 display-f">
+                                {item.description}
+                                &nbsp;&nbsp;
+                                {item?.color 
+                                &&
+                                <span className={`bg-${item?.color} pl-1 pr-1 border-solid bc-${item?.color} br-xs`}>{''}</span>
+                                }
+                            </td>
                         </tr>
                     ))}
                 </tbody>
