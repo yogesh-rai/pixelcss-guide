@@ -64,18 +64,23 @@ const topics = [
     {
         'Classes': [
             {
-                name: 'Background color',
+                name: 'Background Color',
                 component: 'BackgroundColor',
                 active: false
             },
             {
-                name: 'Border Color',
-                component: 'BorderColor',
+                name: 'Text Color',
+                component: 'TextColor',
                 active: false
             },
             {
                 name: 'Border',
                 component: 'Border',
+                active: false
+            },
+            {
+                name: 'Border Color',
+                component: 'BorderColor',
                 active: false
             },
             {
@@ -104,13 +109,13 @@ const topics = [
                 active: false
             },
             {
-                name: 'Text color',
-                component: 'TextColor',
+                name: 'Opacity',
+                component: 'Opacity',
                 active: false
             },
             {
-                name: 'Opacity',
-                component: 'Opacity',
+                name: 'Z-Index',
+                component: 'Zindex',
                 active: false
             },
             {
@@ -124,8 +129,8 @@ const topics = [
                 active: false
             },
             {
-                name: 'Utilities',
-                component: 'Utilities',
+                name: 'Add-on Utilities',
+                component: 'AddOnUtilities',
                 active: false
             },
         ]

@@ -16,6 +16,10 @@ import Opacity from './Topics/utility_classes/Opacity';
 import Flexbox from './Topics/utility_classes/Flexbox';
 import Grid from './Topics/utility_classes/Grid';
 import BackgroundColor from './Topics/utility_classes/BackgroundColor';
+import TextColor from './Topics/utility_classes/TextColor';
+import BorderColor from './Topics/utility_classes/BorderColor';
+import Zindex from './Topics/utility_classes/Zindex';
+import AddOnUtilities from './Topics/utility_classes/AddOnUtilities';
 
 
 function App() {
@@ -98,7 +102,11 @@ function App() {
         { activeTopicName === 'Opacity' && <Opacity /> }
         { activeTopicName === 'Flexbox' && <Flexbox /> }
         { activeTopicName === 'Grid' && <Grid /> }
-        { activeTopicName === 'Background color' && <BackgroundColor /> }
+        { activeTopicName === 'Background Color' && <BackgroundColor /> }
+        { activeTopicName === 'Text Color' && <TextColor /> }
+        { activeTopicName === 'Border Color' && <BorderColor /> }
+        { activeTopicName === 'Z-Index' && <Zindex /> }
+        { activeTopicName === 'Add-on Utilities' && <AddOnUtilities /> }
       </div>
     </div>
   )
