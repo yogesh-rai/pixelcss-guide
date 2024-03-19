@@ -20,6 +20,9 @@ import TextColor from './Topics/utility_classes/TextColor';
 import BorderColor from './Topics/utility_classes/BorderColor';
 import Zindex from './Topics/utility_classes/Zindex';
 import AddOnUtilities from './Topics/utility_classes/AddOnUtilities';
+import Cards from './Topics/utility_components/Cards';
+import Forms from './Topics/utility_components/Forms';
+import Alerts from './Topics/utility_components/Alerts';
 
 
 function App() {
@@ -92,6 +95,11 @@ function App() {
         <Sidebar topicList={TopicList} isMobileMenuOpen={isMobileMenuOpen} updateTopic={changeTopicHandler} />
       </main>
       <div className="app-content">
+        { activeTopicName === 'Cards' && <Cards />}
+        { activeTopicName === 'Forms' && <Forms />}
+        { activeTopicName === 'Alerts' && <Alerts />}
+
+
         { activeTopicName === 'Introduction' && <Introduction /> }
         { activeTopicName === 'Margin' && <Margin /> }
         { activeTopicName === 'Padding' && <Padding /> }
