@@ -23,6 +23,8 @@ import AddOnUtilities from './Topics/utility_classes/AddOnUtilities';
 import Cards from './Topics/utility_components/Cards';
 import Forms from './Topics/utility_components/Forms';
 import Alerts from './Topics/utility_components/Alerts';
+import Badges from './Topics/utility_components/Badges';
+import Buttons from './Topics/utility_components/Buttons';
 
 
 function App() {
@@ -98,6 +100,8 @@ function App() {
         { activeTopicName === 'Cards' && <Cards />}
         { activeTopicName === 'Forms' && <Forms />}
         { activeTopicName === 'Alerts' && <Alerts />}
+        { activeTopicName === 'Badges' && <Badges />}
+        { activeTopicName === 'Buttons' && <Buttons />}
 
 
         { activeTopicName === 'Introduction' && <Introduction /> }
