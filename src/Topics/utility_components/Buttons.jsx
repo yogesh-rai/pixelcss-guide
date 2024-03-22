@@ -7,12 +7,12 @@ const Buttons = () => {
     `
     <div>
 
-        <!-- standard pilled badge -->
+        <!-- pilled buttons -->
         <div class="btn-example">
             <button class="btn fw-bold">Click me!</button>
-            <button class="btn-primary text-white fw-bold">Click me!</button>
-            <button class="btn-secondary text-white fw-bold">Primary</button>
-            <button class="btn-success text-white fw-bold">Secondary</button>
+            <button class="btn-primary text-white fw-bold">Primary</button>
+            <button class="btn-secondary text-white fw-bold">Secondary</button>
+            <button class="btn-success text-white fw-bold">Success</button>
             <button class="btn-danger text-white fw-bold">Danger</button>
             <button class="btn-info fw-bold">Info</button>
             <button class="btn-dark text-white fw-bold">Dark</button>
@@ -26,7 +26,7 @@ const Buttons = () => {
     `
     <div>
 
-        <!-- standard pilled badge -->
+        <!-- CTA buttons (squared buttons) -->
         <div class="btn-example">
             <button class="btn fw-bold br-xs">Click me!</button>
             <button class="btn-primary text-white fw-bold br-xs">Primary</button>
@@ -45,7 +45,7 @@ const Buttons = () => {
     `
     <div>
 
-        <!-- standard pilled badge -->
+        <!-- outlined buttons -->
         <div class="btn-example">
             <button class="btn-outlined fw-bold bw-2">Click me!</button>
             <button class="btn-outlined-primary text-primary fw-bold bw-2">Primary</button>
@@ -64,6 +64,7 @@ const Buttons = () => {
     `
     <div>
 
+        <!-- button with an icon -->
         <button class="btn-primary text-white fw-bold br-sm display-f ai-center jc-center" type="button">
             <!-- Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
@@ -79,8 +80,8 @@ const Buttons = () => {
     `
     <div>
 
-        <!-- standard pilled badge -->
-        <div class="display-g row-md-2 gap-1">
+        <!-- block buttons using grid -->
+        <div class="display-g row-xl-2 gap-1">
             <button class="btn-outlined-primary text-primary fw-bold br-sm bw-2" type="button">Button 1</button>
             <button class="btn-primary text-white fw-bold br-sm" type="button">Button 2</button>
         </div>
@@ -92,43 +93,44 @@ const Buttons = () => {
     return (
         <div className="container pt-4 pb-4">
             <div className="text-gray-dark-2">
-                <h2 className="font-xl text-black-light-2 fw-bold mb-2">Badges</h2>
+                <h2 className="font-xl text-black-light-2 fw-bold mb-2">Buttons</h2>
                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mb-2">
-                    Add a pop of color and information to your content with these versatile little tags. 
-                    Whether you want to highlight a new feature, show status updates, or indicate categories, 
-                    PixelCSS <strong className='fw-extrabold'>Badges</strong> make it easy. 
-                    With customizable styles and sizes, you can tailor them to fit seamlessly into your design.
+                    Elevate your user interface with these stylish and functional elements. 
+                    From primary action buttons to secondary options, 
+                    PixelCSS <strong className='fw-extrabold'>Buttons</strong> offer versatility and customization to suit any design. 
+                    With a range of styles, sizes, and hover effects, 
+                    you can create buttons that perfectly complement your website or application.
                 </p>
             </div>
 
             <div className="mt-2 mb-3">
-                <h3 className="mt-1 mb-1">Types of badges</h3>
+                <h3 className="mt-1 mb-1">Pilled buttons</h3>
                 <CodePreview code={pilledButtonsCode} />
-                <CodeDemo code={pilledButtonsCode} codeTitle={'Types of badges'} codeActions={false} />
+                <CodeDemo code={pilledButtonsCode} codeTitle={'Pilled buttons'} codeActions={false} />
             </div>
 
             <div className="mt-2 mb-3">
-                <h3 className="mt-1 mb-1">Types of badges</h3>
+                <h3 className="mt-1 mb-1">CTA buttons</h3>
                 <CodePreview code={squaredButtonsCode} />
-                <CodeDemo code={squaredButtonsCode} codeTitle={'Types of badges'} codeActions={false} />
+                <CodeDemo code={squaredButtonsCode} codeTitle={'CTA buttons'} codeActions={false} />
             </div>
 
             <div className="mt-2 mb-3">
-                <h3 className="mt-1 mb-1">Types of badges</h3>
+                <h3 className="mt-1 mb-1">Outlined buttons</h3>
                 <CodePreview code={outlinedButtonsCode} />
-                <CodeDemo code={outlinedButtonsCode} codeTitle={'Types of badges'} codeActions={false} />
+                <CodeDemo code={outlinedButtonsCode} codeTitle={'Outlined buttons'} codeActions={false} />
             </div>
 
             <div className="mt-2 mb-3">
-                <h3 className="mt-1 mb-1">Types of badges</h3>
+                <h3 className="mt-1 mb-1">Button with an icon</h3>
                 <CodePreview code={iconButton} />
-                <CodeDemo code={iconButton} codeTitle={'Types of badges'} codeActions={false} />
+                <CodeDemo code={iconButton} codeTitle={'button with an icon'} codeActions={false} />
             </div>
 
             <div className="mt-2 mb-3">
-                <h3 className="mt-1 mb-1">Types of badges</h3>
+                <h3 className="mt-1 mb-1">Block buttons</h3>
                 <CodePreview code={blockedButtonsCode} />
-                <CodeDemo code={blockedButtonsCode} codeTitle={'Types of badges'} codeActions={false} />
+                <CodeDemo code={blockedButtonsCode} codeTitle={'Block buttons'} codeActions={false} />
             </div>
         </div>
     )

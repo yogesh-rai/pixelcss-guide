@@ -25,37 +25,28 @@ const topics = [
                 active: false
             },
             {
-                name: 'Avatars',
-                component: 'Avatars',
-                active: false
-            },
-            {
                 name: 'Badges',
                 component: 'Badges',
                 active: false
             },
-            
             {
                 name: 'Buttons',
                 component: 'Buttons',
                 active: false
             },
-            
             {
                 name: 'Images',
                 component: 'Images',
                 active: false
             },
-            
-            {
-                name: 'Inputs',
-                component: 'Inputs',
-                active: false
-            },
-            
             {
                 name: 'Navbars',
                 component: 'Navbars',
+                active: false
+            },
+            {
+                name: 'Footers',
+                component: 'Footers',
                 active: false
             },
         ]

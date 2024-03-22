@@ -25,6 +25,8 @@ import Forms from './Topics/utility_components/Forms';
 import Alerts from './Topics/utility_components/Alerts';
 import Badges from './Topics/utility_components/Badges';
 import Buttons from './Topics/utility_components/Buttons';
+import Images from './Topics/utility_components/Images';
+import Footers from './Topics/utility_components/Footers';
 
 
 function App() {
@@ -102,6 +104,8 @@ function App() {
         { activeTopicName === 'Alerts' && <Alerts />}
         { activeTopicName === 'Badges' && <Badges />}
         { activeTopicName === 'Buttons' && <Buttons />}
+        { activeTopicName === 'Images' && <Images />}
+        { activeTopicName === 'Footers' && <Footers />}
 
 
         { activeTopicName === 'Introduction' && <Introduction /> }
