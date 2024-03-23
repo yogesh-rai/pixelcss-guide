@@ -25,8 +25,8 @@ const TextColor = () => {
 
     const lighterVariationClasses = [
         { name: 'Lighter Variations', properties: [
-            { classNames: 'text-orange-light-1', color: 'orange-light-1', description: 'color: #ff1a1a' },
-            { classNames: 'text-orange-light-2', color: 'orange-light-2', description: 'color: #ff3333' },
+            { classNames: 'text-orange-light-1', color: 'orange-light-1', description: 'color: #ff8c1a' },
+            { classNames: 'text-orange-light-2', color: 'orange-light-2', description: 'color: #ff9933' },
             { classNames: 'text-orange-light-3', color: 'orange-light-3', description: 'color: #ff4d4d' },
             { classNames: 'text-orange-light-4', color: 'orange-light-4', description: 'color: #ff6666' },
             { classNames: 'text-orange-light-5', color: 'orange-light-5', description: 'color: #ff8080' },

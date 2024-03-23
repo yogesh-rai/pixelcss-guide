@@ -37,11 +37,11 @@ const Footers = () => {
     return (
         <div className="container pt-4 pb-4">
             <div className="text-gray-dark-2">
-                <h2 className="font-xl text-black-light-2 fw-bold mb-2">Images</h2>
+                <h2 className="font-xl text-black-light-2 fw-bold mb-2">Footer</h2>
                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mb-2">
-                    From stunning photos to informative graphics, 
-                    PixelCSS <strong className='fw-extrabold'>Images</strong> offer flexibility and clarity to showcase your media. With customizable sizing, borders, and effects, 
-                    you can effortlessly integrate images into your design.
+                    Complete your website or application with a polished and functional footer. 
+                    PixelCSS  <strong className='fw-extrabold'>Footer</strong> offers a simple yet effective way to provide essential information, links, 
+                    and contact details at the bottom of your pages.
                 </p>
             </div>
 

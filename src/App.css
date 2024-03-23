@@ -10,6 +10,11 @@
   margin-left: 260px;
 }
 
+.app-footer {
+  margin-left: 220px;
+  margin-top: 4.5rem;
+}
+
 .app-sidebar{
   /* display is set to none inside jsx file */
   position: fixed;
@@ -21,6 +26,10 @@
   padding-top: 5rem;
   padding-bottom: 3rem;
   overflow-y: auto;
+}
+
+.app-index-toggle{
+ display: none;
 }
 
 ::-webkit-scrollbar{
@@ -88,12 +97,9 @@ code::-webkit-scrollbar-thumb:hover {
 
 /* media queries */
 @media(max-width: 767px){
+
   ::-webkit-scrollbar{
       width: 4px;
-  }
-  .app-code{
-      /* prevents horizontal scroll due to code */
-      /* width: calc(100vw - 3.4rem); */
   }
 
   pre {
@@ -105,12 +111,22 @@ code::-webkit-scrollbar-thumb:hover {
     font-size: 14px;
   }
 
+  .app-footer {
+    margin-left: 0px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .nav-items {
+    margin-right: 1rem;
+  }
+
   /* sidebar index */
   .app-sidebar{
       /* display is set to none inside jsx file */
       padding-top: 5rem;
       padding-bottom: 4rem;
-      transition: all ease 0.35s;
+      transition: all 0.1s ease;
       position: fixed;
       max-height: 100%;
       overflow-y: auto;
@@ -120,16 +136,22 @@ code::-webkit-scrollbar-thumb:hover {
       bottom: 0;
       left: 0;
   }
+
   .app-index-toggle{
+      display: block;
       position: fixed;
       z-index: 2;
-      bottom: 1.5rem;
+      /* top: 0.5rem; */
       right: 0.75rem;
   }
+
   .showOnMobile{
       display: block;
+      transition: all 0.3s ease;
   }
+
   .hideOnMobile{
       display: none;
+      transition: all 0.3s ease;
   }
 }

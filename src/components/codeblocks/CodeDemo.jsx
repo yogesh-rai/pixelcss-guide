@@ -3,7 +3,7 @@ import CodeSnippet from './CodeSnippet';
 import { Icon } from '@iconify-icon/react';
 // import CodePreview from './CodePreview'
 
-const CodeDemo = ({ code, codeTitle, codeActions }) => {
+const CodeDemo = ({ code, codeTitle, codeActions, language = "html" }) => {
 
     const [previewEnabled, setPreview] = useState(true);
     const [showTooltip, setShowTooltip] = useState(false);
@@ -80,7 +80,7 @@ const CodeDemo = ({ code, codeTitle, codeActions }) => {
                 )
                 :
                 (
-                    !previewEnabled && <CodeSnippet code={code} language="html" />
+                    !previewEnabled && <CodeSnippet code={code} language={language} />
                 )
             }
 

@@ -4,6 +4,7 @@ const AddOnUtilities = () => {
 
     const AddOnUtilitiesClasses  = [
         { name: 'Add-on Utilities', properties: [
+            { classNames: 'container', description: 'a container with equal margin from left and right' },
             { classNames: 'display-n', description: 'display: none' },
             { classNames: 'display-b', description: 'display: block' },
             { classNames: 'display-i', description: 'display: inline' },
