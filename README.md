@@ -15,4 +15,5 @@
 
 
   #### Screenshots:-
-  ![PixelCSS](https://github.com/yogesh-rai/pixelcss-guide/assets/69380654/04ea6648-9cac-4247-af45-f2c4ccffb87c)
+  ![PixelCSS (1)](https://github.com/yogesh-rai/pixelcss-guide/assets/69380654/31096ded-2f99-42e9-a2b8-ae961c949998)
+
