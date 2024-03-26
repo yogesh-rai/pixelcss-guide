@@ -5,7 +5,7 @@ const Footers = () => {
   
     const footerCode = 
     `
-    <div class="">
+    <div>
 
         <!-- footer -->
         <footer class="footer">

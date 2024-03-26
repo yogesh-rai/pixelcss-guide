@@ -6,7 +6,7 @@ import { Icon } from '@iconify-icon/react';
 const CodeDemo = ({ code, codeTitle, codeActions, language = "html" }) => {
 
     const [previewEnabled, setPreview] = useState(true);
-    const [showTooltip, setShowTooltip] = useState(false);
+    const [isCopied, setIsCopied] = useState(false);
 
     useEffect(() => {
         if(!codeActions){
@@ -15,12 +15,12 @@ const CodeDemo = ({ code, codeTitle, codeActions, language = "html" }) => {
     }, [codeActions])
 
 
-    function toggleTooltip() {
-        setShowTooltip(!showTooltip);
-        if (!showTooltip) {
+    function toggleCopiedSuccess() {
+        setIsCopied(!isCopied);
+        if (!isCopied) {
           setTimeout(() => {
-            setShowTooltip(false);
-          }, 2000); // Hide the tooltip after 2 seconds (2000 milliseconds)
+            setIsCopied(false);
+          }, 1000); // Hide the success icon after 1 seconds (1000 milliseconds)
         }
     };
 
@@ -31,7 +31,7 @@ const CodeDemo = ({ code, codeTitle, codeActions, language = "html" }) => {
 
 
     function copyText(){
-        navigator.clipboard.writeText(code).then(toggleTooltip);
+        navigator.clipboard.writeText(code).then(toggleCopiedSuccess);
     }
 
     return (
@@ -43,13 +43,6 @@ const CodeDemo = ({ code, codeTitle, codeActions, language = "html" }) => {
                     {
                         codeActions ? (
                             <div className="">
-                                {/* <button 
-                                  onClick={()=> showPreview(true)} 
-                                  style={{background: previewEnabled?'': 'transparent'}} 
-                                  className="pl4 pr4 pt2 pb2 borderNone hover:bgGray3"
-                                >
-                                    <i className="far fa-eye mr1 textRg"></i>
-                                </button> */}
                                 <button
                                   onClick={()=> showPreview(false)} 
                                   style={{ background: !previewEnabled ? '': 'transparent' }} 
@@ -65,8 +58,7 @@ const CodeDemo = ({ code, codeTitle, codeActions, language = "html" }) => {
                       className="p-1 border-none bg-white bg-hover-gray-light-5 c-pointer"
                       style={{ position: 'relative' }}
                     >
-                        { showTooltip && <div className="tooltip">copied</div> }
-                        <Icon icon="fa-solid:copy" width="1rem" height="1rem" />
+                        { !isCopied ? <Icon icon="fa-solid:copy" width="1rem" height="1rem" /> : <Icon icon="ooui:success" width="1rem" height="1rem" />}
                     </button>
                 </div>                
 

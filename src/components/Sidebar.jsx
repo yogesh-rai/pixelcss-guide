@@ -1,12 +1,9 @@
-// import React from 'react'
-// import { v4 as uuidv4 } from 'uuid';
-
 import { Icon } from "@iconify-icon/react";
 
 const Sidebar = ({topicList, isMobileMenuOpen, updateTopic}) => {
 
     return (
-        <div className={"app-sidebar bg-green-light-3 "+ (isMobileMenuOpen?'showOnMobile' : 'hideOnMobile')}>
+        <div className={"app-sidebar bg-green-light-3 "+ (isMobileMenuOpen? 'showOnMobile' : 'hideOnMobile')}>
             <div className="">
                 {  topicList.map( (section, index) => {
                     const sectionHeadings = Object.keys(section);

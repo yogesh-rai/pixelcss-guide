@@ -12,7 +12,7 @@ function App() {
 
   const [TopicList, setTopicList] = useState(topics);
   const [activeTopicName, setActiveTopicName] = useState('Introduction');
-  const [isMobileMenuOpen, setMobileMenu] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     if(isMobileMenuOpen){
@@ -25,7 +25,7 @@ function App() {
 
 
   function toggleMobileMenu(){
-    setMobileMenu(prevState => !prevState);
+    setIsMobileMenuOpen((prevState) => !prevState);
   }
 
 
@@ -63,12 +63,12 @@ function App() {
         }
       }
     })
-    // console.log('Copy: ', copyAppIndex)
-    setTopicList(copyTopicsArr)
+
+    setTopicList(copyTopicsArr);
     scrollToTop();
 
     // close mobile menu
-    setMobileMenu(false)
+    setIsMobileMenuOpen(false);
   }
 
   return (

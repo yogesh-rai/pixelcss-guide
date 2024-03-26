@@ -28,7 +28,7 @@
   overflow-y: auto;
 }
 
-.app-index-toggle{
+.toggle-menu{
  display: none;
 }
 
@@ -81,19 +81,6 @@ code::-webkit-scrollbar-thumb:hover {
   background: rgb(14, 99, 102);
 }
 
-.tooltip {
-  font-size: 12px;
-  background: #121212cd;
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 4px;
-  position: 'absolute';
-  top: '100%';
-  left: '50%';
-  transform: 'translate(-50%, 5px)';
-  /* display: none; */
-}
-
 
 /* media queries */
 @media(max-width: 767px){
@@ -118,7 +105,7 @@ code::-webkit-scrollbar-thumb:hover {
   }
 
   .nav-items {
-    margin-right: 1rem;
+    margin-right: 9px;
   }
 
   /* sidebar index */
@@ -126,7 +113,6 @@ code::-webkit-scrollbar-thumb:hover {
       /* display is set to none inside jsx file */
       padding-top: 5rem;
       padding-bottom: 4rem;
-      transition: all 0.1s ease;
       position: fixed;
       max-height: 100%;
       overflow-y: auto;
@@ -137,21 +123,27 @@ code::-webkit-scrollbar-thumb:hover {
       left: 0;
   }
 
-  .app-index-toggle{
+  .toggle-menu{
       display: block;
-      position: fixed;
-      z-index: 2;
-      /* top: 0.5rem; */
-      right: 0.75rem;
+      margin-right: -8px;
   }
 
   .showOnMobile{
       display: block;
-      transition: all 0.3s ease;
+      animation: slideIn 0.3s ease forwards; 
   }
 
   .hideOnMobile{
       display: none;
-      transition: all 0.3s ease;
+  }
+}
+
+/* Keyframe animation for slide-in */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%); /* Slide in from left */
+  }
+  to {
+      transform: translateX(0); /* Slide in to visible position */
   }
 }

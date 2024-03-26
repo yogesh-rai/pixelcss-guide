@@ -25,36 +25,36 @@ const BorderColor = () => {
 
     const lighterVariationClasses = [
         { name: 'Lighter Variations', properties: [
-            { classNames: 'bc-primary-light-1', color: 'primary-light-1', description: 'border-color: #ff1a1a' },
-            { classNames: 'bc-primary-light-2', color: 'primary-light-2', description: 'border-color: #ff3333' },
-            { classNames: 'bc-primary-light-3', color: 'primary-light-3', description: 'border-color: #ff4d4d' },
-            { classNames: 'bc-primary-light-4', color: 'primary-light-4', description: 'border-color: #ff6666' },
-            { classNames: 'bc-primary-light-5', color: 'primary-light-5', description: 'border-color: #ff8080' },
-            { classNames: 'bc-primary-light-6', color: 'primary-light-6', description: 'border-color: #ff9999' },
-            { classNames: 'bc-danger-light-1', color: 'danger-light-1', description: 'border-color: #477cf0' },
-            { classNames: 'bc-danger-light-2', color: 'danger-light-2', description: 'border-color: #5b8af1' },
-            { classNames: 'bc-danger-light-3', color: 'danger-light-3', description: 'border-color: #7099f3' },
-            { classNames: 'bc-danger-light-4', color: 'danger-light-4', description: 'border-color: #84a7f5' },
-            { classNames: 'bc-danger-light-5', color: 'danger-light-5', description: 'border-color: #99b6f7' },
-            { classNames: 'bc-danger-light-6', color: 'danger-light-6', description: 'border-color: #adc5f8' },
+            { classNames: 'bc-primary-light-1', color: 'primary-light-1', description: 'border-color: #477cf0' },
+            { classNames: 'bc-primary-light-2', color: 'primary-light-2', description: 'border-color: #5b8af1' },
+            { classNames: 'bc-primary-light-3', color: 'primary-light-3', description: 'border-color: #7099f3' },
+            { classNames: 'bc-primary-light-4', color: 'primary-light-4', description: 'border-color: #84a7f5' },
+            { classNames: 'bc-primary-light-5', color: 'primary-light-5', description: 'border-color: #99b6f7' },
+            { classNames: 'bc-primary-light-6', color: 'primary-light-6', description: 'border-color: #adc5f8' },
+            { classNames: 'bc-danger-light-1', color: 'danger-light-1', description: 'border-color: #d73d63' },
+            { classNames: 'bc-danger-light-2', color: 'danger-light-2', description: 'border-color: #dc5275' },
+            { classNames: 'bc-danger-light-3', color: 'danger-light-3', description: 'border-color: #e06886' },
+            { classNames: 'bc-danger-light-4', color: 'danger-light-4', description: 'border-color: #e57d97' },
+            { classNames: 'bc-danger-light-5', color: 'danger-light-5', description: 'border-color: #e993a9' },
+            { classNames: 'bc-danger-light-6', color: 'danger-light-6', description: 'border-color: #eda9ba' },
         ]},
     ];
 
     // change color code
     const darkerVariationClasses = [
         { name: 'Darker Variations', properties: [
-            { classNames: 'bc-yellow-dark-1', color: 'yellow-dark-1', description: 'border-color: #ff1a1a' },
-            { classNames: 'bc-yellow-dark-2', color: 'yellow-dark-2', description: 'border-color: #ff3333' },
-            { classNames: 'bc-yellow-dark-3', color: 'yellow-dark-3', description: 'border-color: #ff4d4d' },
-            { classNames: 'bc-yellow-dark-4', color: 'yellow-dark-4', description: 'border-color: #ff6666' },
-            { classNames: 'bc-yellow-dark-5', color: 'yellow-dark-5', description: 'border-color: #ff8080' },
-            { classNames: 'bc-yellow-dark-6', color: 'yellow-dark-6', description: 'border-color: #ff9999' },
-            { classNames: 'bc-purple-dark-1', color: 'purple-dark-1', description: 'border-color: #477cf0' },
-            { classNames: 'bc-purple-dark-2', color: 'purple-dark-2', description: 'border-color: #5b8af1' },
-            { classNames: 'bc-purple-dark-3', color: 'purple-dark-3', description: 'border-color: #7099f3' },
-            { classNames: 'bc-purple-dark-4', color: 'purple-dark-4', description: 'border-color: #84a7f5' },
-            { classNames: 'bc-purple-dark-5', color: 'purple-dark-5', description: 'border-color: #99b6f7' },
-            { classNames: 'bc-purple-dark-6', color: 'purple-dark-6', description: 'border-color: #adc5f8' },
+            { classNames: 'bc-yellow-dark-1', color: 'yellow-dark-1', description: 'border-color: #e6e600' },
+            { classNames: 'bc-yellow-dark-2', color: 'yellow-dark-2', description: 'border-color: #cccc00' },
+            { classNames: 'bc-yellow-dark-3', color: 'yellow-dark-3', description: 'border-color: #b3b300' },
+            { classNames: 'bc-yellow-dark-4', color: 'yellow-dark-4', description: 'border-color: #999900' },
+            { classNames: 'bc-yellow-dark-5', color: 'yellow-dark-5', description: 'border-color: olive' },
+            { classNames: 'bc-yellow-dark-6', color: 'yellow-dark-6', description: 'border-color: #666600' },
+            { classNames: 'bc-purple-dark-1', color: 'purple-dark-1', description: 'border-color: #7c27cb' },
+            { classNames: 'bc-purple-dark-2', color: 'purple-dark-2', description: 'border-color: #6e22b5' },
+            { classNames: 'bc-purple-dark-3', color: 'purple-dark-3', description: 'border-color: #611e9e' },
+            { classNames: 'bc-purple-dark-4', color: 'purple-dark-4', description: 'border-color: #531a88' },
+            { classNames: 'bc-purple-dark-5', color: 'purple-dark-5', description: 'border-color: #451671' },
+            { classNames: 'bc-purple-dark-6', color: 'purple-dark-6', description: 'border-color: #37115a' },
         ]},
     ];
     
@@ -89,7 +89,7 @@ const BorderColor = () => {
                                 </p>
                                 <PropertiesTable data={lighterVariationClass.properties} />
                                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
-                                    Similarly, you can create lighter variations for other colors. For example: 'bc-blue-light-8', 'text-red-light-5'
+                                    Similarly, you can create lighter variations for other colors. For example: 'bc-blue-light-8', 'bc-red-light-5', etc.
                                 </p>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const BorderColor = () => {
                                 </p>
                                 <PropertiesTable data={darkerVariationClass.properties} />
                                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
-                                    Similarly, you can create darker variations for other colors. For example: 'bc-info-dark-5', 'bg-brown-dark-2'
+                                    Similarly, you can create darker variations for other colors. For example: 'bc-info-dark-5', 'bc-brown-dark-2', etc.
                                 </p>
                             </div>
                         </div>

@@ -27,34 +27,33 @@ const TextColor = () => {
         { name: 'Lighter Variations', properties: [
             { classNames: 'text-orange-light-1', color: 'orange-light-1', description: 'color: #ff8c1a' },
             { classNames: 'text-orange-light-2', color: 'orange-light-2', description: 'color: #ff9933' },
-            { classNames: 'text-orange-light-3', color: 'orange-light-3', description: 'color: #ff4d4d' },
-            { classNames: 'text-orange-light-4', color: 'orange-light-4', description: 'color: #ff6666' },
-            { classNames: 'text-orange-light-5', color: 'orange-light-5', description: 'color: #ff8080' },
-            { classNames: 'text-orange-light-6', color: 'orange-light-6', description: 'color: #ff9999' },
-            { classNames: 'text-purple-light-1', color: 'purple-light-1', description: 'color: #477cf0' },
-            { classNames: 'text-purple-light-2', color: 'purple-light-2', description: 'color: #5b8af1' },
-            { classNames: 'text-purple-light-3', color: 'purple-light-3', description: 'color: #7099f3' },
-            { classNames: 'text-purple-light-4', color: 'purple-light-4', description: 'color: #84a7f5' },
-            { classNames: 'text-purple-light-5', color: 'purple-light-5', description: 'color: #99b6f7' },
-            { classNames: 'text-purple-light-6', color: 'purple-light-6', description: 'color: #adc5f8' },
+            { classNames: 'text-orange-light-3', color: 'orange-light-3', description: 'color: #ffa54d' },
+            { classNames: 'text-orange-light-4', color: 'orange-light-4', description: 'color: #ffb266' },
+            { classNames: 'text-orange-light-5', color: 'orange-light-5', description: 'color: #ffbf80' },
+            { classNames: 'text-orange-light-6', color: 'orange-light-6', description: 'color: #ffcc99' },
+            { classNames: 'text-purple-light-1', color: 'purple-light-1', description: 'color: #9640e5' },
+            { classNames: 'text-purple-light-2', color: 'purple-light-2', description: 'color: #a155e8' },
+            { classNames: 'text-purple-light-3', color: 'purple-light-3', description: 'color: #ad6beb' },
+            { classNames: 'text-purple-light-4', color: 'purple-light-4', description: 'color: #b980ee' },
+            { classNames: 'text-purple-light-5', color: 'purple-light-5', description: 'color: #c595f1' },
+            { classNames: 'text-purple-light-6', color: 'purple-light-6', description: 'color: #d0aaf3' },
         ]},
     ];
 
-    // change color code
     const darkerVariationClasses = [
         { name: 'Darker Variations', properties: [
-            { classNames: 'text-blue-dark-1', color: 'blue-dark-1', description: 'color: #ff1a1a' },
-            { classNames: 'text-blue-dark-2', color: 'blue-dark-2', description: 'color: #ff3333' },
-            { classNames: 'text-blue-dark-3', color: 'blue-dark-3', description: 'color: #ff4d4d' },
-            { classNames: 'text-blue-dark-4', color: 'blue-dark-4', description: 'color: #ff6666' },
-            { classNames: 'text-blue-dark-5', color: 'blue-dark-5', description: 'color: #ff8080' },
-            { classNames: 'text-blue-dark-6', color: 'blue-dark-6', description: 'color: #ff9999' },
-            { classNames: 'text-danger-dark-1', color: 'danger-dark-1', description: 'color: #477cf0' },
-            { classNames: 'text-danger-dark-2', color: 'danger-dark-2', description: 'color: #5b8af1' },
-            { classNames: 'text-danger-dark-3', color: 'danger-dark-3', description: 'color: #7099f3' },
-            { classNames: 'text-danger-dark-4', color: 'danger-dark-4', description: 'color: #84a7f5' },
-            { classNames: 'text-danger-dark-5', color: 'danger-dark-5', description: 'color: #99b6f7' },
-            { classNames: 'text-danger-dark-6', color: 'danger-dark-6', description: 'color: #adc5f8' },
+            { classNames: 'text-blue-dark-1', color: 'blue-dark-1', description: 'color: #0000e6' },
+            { classNames: 'text-blue-dark-2', color: 'blue-dark-2', description: 'color: #0000cc' },
+            { classNames: 'text-blue-dark-3', color: 'blue-dark-3', description: 'color: #0000b3' },
+            { classNames: 'text-blue-dark-4', color: 'blue-dark-4', description: 'color: #000099' },
+            { classNames: 'text-blue-dark-5', color: 'blue-dark-5', description: 'color: navy' },
+            { classNames: 'text-blue-dark-6', color: 'blue-dark-6', description: 'color: #000066' },
+            { classNames: 'text-danger-dark-1', color: 'danger-dark-1', description: 'color: #be234a' },
+            { classNames: 'text-danger-dark-2', color: 'danger-dark-2', description: 'color: #a91f42' },
+            { classNames: 'text-danger-dark-3', color: 'danger-dark-3', description: 'color: #941b39' },
+            { classNames: 'text-danger-dark-4', color: 'danger-dark-4', description: 'color: #7f1731' },
+            { classNames: 'text-danger-dark-5', color: 'danger-dark-5', description: 'color: #6a1429' },
+            { classNames: 'text-danger-dark-6', color: 'danger-dark-6', description: 'color: #541021' },
         ]},
     ];
 
@@ -101,7 +100,7 @@ const TextColor = () => {
                                 </p>
                                 <PropertiesTable data={lighterVariationClass.properties} />
                                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
-                                    Similarly, you can create lighter variations for other colors. For example: 'text-green-light-8', 'text-secondary-light-3'
+                                    Similarly, you can create lighter variations for other colors. For example: 'text-green-light-8', 'text-secondary-light-3', etc.
                                 </p>
                             </div>
                         </div>
@@ -119,7 +118,7 @@ const TextColor = () => {
                                 </p>
                                 <PropertiesTable data={darkerVariationClass.properties} />
                                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
-                                    Similarly, you can create darker variations for other colors. For example: 'text-purple-dark-5', 'bg-brown-dark-7'
+                                    Similarly, you can create darker variations for other colors. For example: 'text-purple-dark-5', 'text-brown-dark-7', etc.
                                 </p>
                             </div>
                         </div>
@@ -136,6 +135,9 @@ const TextColor = () => {
                                     {`Enhance user interaction with the 'text-hover' class, effortlessly changing text colors upon mouse hover. Experiment with lighter and darker variations of colors to add depth and dimension to the text.`}
                                 </p>
                                 <PropertiesTable data={textColorHoverClass.properties} />
+                                <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
+                                    Similarly, you can create text-hover classes for other colors. For example: 'text-hover-dark', 'text-hover-purple-dark-2, etc.             
+                                </p>
                             </div>
                         </div>
                     </div>

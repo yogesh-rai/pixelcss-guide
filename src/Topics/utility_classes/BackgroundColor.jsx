@@ -40,21 +40,20 @@ const BackgroundColor = () => {
         ]},
     ];
 
-    // change color code
     const darkerVariationClasses = [
         { name: 'Darker Variations', properties: [
-            { classNames: 'bg-purple-dark-1', color: 'purple-dark-1', description: 'background-color: #ff1a1a' },
-            { classNames: 'bg-purple-dark-2', color: 'purple-dark-2', description: 'background-color: #ff3333' },
-            { classNames: 'bg-purple-dark-3', color: 'purple-dark-3', description: 'background-color: #ff4d4d' },
-            { classNames: 'bg-purple-dark-4', color: 'purple-dark-4', description: 'background-color: #ff6666' },
-            { classNames: 'bg-purple-dark-5', color: 'purple-dark-5', description: 'background-color: #ff8080' },
-            { classNames: 'bg-purple-dark-6', color: 'purple-dark-6', description: 'background-color: #ff9999' },
-            { classNames: 'bg-info-dark-1', color: 'info-dark-1', description: 'background-color: #477cf0' },
-            { classNames: 'bg-info-dark-2', color: 'info-dark-2', description: 'background-color: #5b8af1' },
-            { classNames: 'bg-info-dark-3', color: 'info-dark-3', description: 'background-color: #7099f3' },
-            { classNames: 'bg-info-dark-4', color: 'info-dark-4', description: 'background-color: #84a7f5' },
-            { classNames: 'bg-info-dark-5', color: 'info-dark-5', description: 'background-color: #99b6f7' },
-            { classNames: 'bg-info-dark-6', color: 'info-dark-6', description: 'background-color: #adc5f8' },
+            { classNames: 'bg-purple-dark-1', color: 'purple-dark-1', description: 'background-color: #7c27cb' },
+            { classNames: 'bg-purple-dark-2', color: 'purple-dark-2', description: 'background-color: #6e22b5' },
+            { classNames: 'bg-purple-dark-3', color: 'purple-dark-3', description: 'background-color: #611e9e' },
+            { classNames: 'bg-purple-dark-4', color: 'purple-dark-4', description: 'background-color: #531a88' },
+            { classNames: 'bg-purple-dark-5', color: 'purple-dark-5', description: 'background-color: #451671' },
+            { classNames: 'bg-purple-dark-6', color: 'purple-dark-6', description: 'background-color: #37115a' },
+            { classNames: 'bg-info-dark-1', color: 'info-dark-1', description: 'background-color: #ddb019' },
+            { classNames: 'bg-info-dark-2', color: 'info-dark-2', description: 'background-color: #c59c16' },
+            { classNames: 'bg-info-dark-3', color: 'info-dark-3', description: 'background-color: #ac8914' },
+            { classNames: 'bg-info-dark-4', color: 'info-dark-4', description: 'background-color: #947511' },
+            { classNames: 'bg-info-dark-5', color: 'info-dark-5', description: 'background-color: #7b620e' },
+            { classNames: 'bg-info-dark-6', color: 'info-dark-6', description: 'background-color: #624e0b' },
         ]},
     ];
 
@@ -104,7 +103,7 @@ const BackgroundColor = () => {
                                 </p>
                                 <PropertiesTable data={lighterVariationClass.properties} />
                                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
-                                    Similarly, you can create lighter variations for other colors. For example: 'bg-yellow-light-8', 'bg-success-light-9'
+                                    Similarly, you can create lighter variations for other colors. For example: 'bg-yellow-light-8', 'bg-success-light-9', etc.
                                 </p>
                             </div>
                         </div>
@@ -122,7 +121,7 @@ const BackgroundColor = () => {
                                 </p>
                                 <PropertiesTable data={darkerVariationClass.properties} />
                                 <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
-                                    Similarly, you can create darker variations for other colors. For example: 'bg-orange-dark-5', 'bg-danger-dark-9'
+                                    Similarly, you can create darker variations for other colors. For example: 'bg-orange-dark-5', 'bg-danger-dark-9', etc.
                                 </p>
                             </div>
                         </div>
@@ -139,6 +138,9 @@ const BackgroundColor = () => {
                                     {`Enhance user interaction with the 'bg-hover' class, effortlessly changing background colors upon mouse hover. Experiment with lighter and darker variations of colors to add depth and dimension to your element.`}
                                 </p>
                                 <PropertiesTable data={bgColorHoverClass.properties} />
+                                <p className="font-md text-gray-dark-3 fw-bold lh-3 mt-2">
+                                    Similarly, you can create bg-hover classes for other colors. For example: 'bg-hover-yellow', 'bg-hover-red-light-2, etc.          
+                                </p>
                             </div>
                         </div>
                     </div>
